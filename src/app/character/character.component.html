@@ -1,0 +1,32 @@
+<div class="album py-5" id="album">
+
+    <div class="container"> 
+      <h1 class="mb-3">All Characters</h1>
+      <button type="button" class="btn mb-3 sticky-top" [routerLink]="['/search-character']"><i class="bi bi-search" id="searchI"></i>Search</button>
+
+    <div class="row row-cols-xs-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" infinite-scroll (scrolled)="onScrollDown()" >
+        <div class="col" *ngFor="let item of dataCharacter"> 
+          <div class="card h-100" id="CharacterCard">
+            <img src="{{item.image}}"  id="CharacterImage">
+            <div class="card-body">
+                <h2 class="card-title">{{item.name}}</h2>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a (click)="infoCharacter(item)" class="card-link">View Full Character</a></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  
+
+
+
+   
+    
+   
+
+        

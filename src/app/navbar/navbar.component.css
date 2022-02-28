@@ -1,0 +1,31 @@
+#iconh {
+    max-height: 80px;
+    animation: angry-animate 10s ease-in-out 2s infinite normal;
+}
+
+@keyframes angry-animate {
+100%{ transform: rotate(360deg); }
+}
+
+#iconh1 {
+    max-height: 80px;
+}
+
+ul > li > i {
+    color: white;
+    margin-left: .3rem;
+}
+
+h1 {
+    margin-left: 25px;
+}
+
+@media only screen and (max-width: 576px){
+    #iconh1 {
+        max-height: 50px;
+    }
+
+    #iconh {
+        max-height: 30px;
+    }
+}

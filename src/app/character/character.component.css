@@ -1,0 +1,78 @@
+/*buttons*/
+
+/*#btn {
+    font-size: 10pt;
+}*/
+
+
+#album {
+    background-color: #202329;
+    color: whitesmoke;
+}
+
+.card {
+    box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.57);
+    -webkit-box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.57);
+    -moz-box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.57);
+    background-color: #3C3E44;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+#CharacterImage{
+    border-radius: 10px 10px 5px 5px;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+@keyframes fadeInBtn {
+    from {opacity: 0;}
+    to {opacity: 100;}
+  }
+
+.btn {
+    background-color: #8CC547;
+    color: white;
+    animation-name: fadeInBtn;
+    animation-duration: 10s;
+}
+
+
+
+
+h5, h2, h3, h1 {
+    font-weight: 900;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/*icon*/
+
+
+
+#searchI {
+    margin-right: 10px;
+}
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  

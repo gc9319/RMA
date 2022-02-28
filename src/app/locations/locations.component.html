@@ -1,0 +1,26 @@
+
+<section>
+    <h1 class="m-5">All Locations</h1>
+    </section>
+    <section>
+        <table class="table table-dark table-hover" infinite-scroll (scrolled)="onScrollDown()">
+            <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Dimension</th>
+                  <th scope="col">Residents</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of locations">
+                  <th scope="row">{{item.id}}</th>
+                  <td>{{item.name}}</td>
+                  <td>{{item.type}}</td>
+                  <td>{{item.dimension}}</td>
+                  <td>{{item.residents.length}}</td>
+                </tr>
+            </tbody>
+          </table>
+    </section>

@@ -1,0 +1,13 @@
+hr {
+    width: 50%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #b7d0e2;
+}
+
+footer {
+    box-shadow: -1px -7px 13px -5px rgba(0,0,0,0.33);
+-webkit-box-shadow: -1px -7px 13px -5px rgba(0,0,0,0.33);
+-moz-box-shadow: -1px -7px 13px -5px rgba(0,0,0,0.33);
+}

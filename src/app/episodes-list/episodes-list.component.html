@@ -1,0 +1,25 @@
+<section>
+<h1 class="m-5">All Episodes</h1>
+</section>
+<section>
+    <table class="table table-dark table-hover" infinite-scroll (scrolled)="onScrollDown()">
+        <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Released</th>
+              <th scope="col">Episode</th>
+              <th scope="col">Characters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of episodes">
+              <th scope="row">{{item.id}}</th>
+              <td>{{item.name}}</td>
+              <td>{{item.air_date}}</td>
+              <td>{{item.episode}}</td>
+              <td>{{item.characters.length}}</td>
+            </tr>
+        </tbody>
+      </table>
+</section>
